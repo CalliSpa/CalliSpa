@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalliSpa</title>
-    <link rel="icon" href="Logo1.png" type="image/x-icon">
+    <link rel="icon" href="../Imagenes/Logo1.png" type="image/x-icon">
     <style>
         body, html {
             margin: 0;
@@ -19,7 +19,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('fondoI.jpg');
+            background-image: url('../Imagenes/fondoI.jpg');
             background-size: cover;
             background-position: center;
             z-index: -1;
@@ -32,70 +32,38 @@
         }
 
         .logo img {
-            width: 275px; 
+            width: 150px;
             transition: width 0.3s ease;
         }
-.resolucion {
-    width: 99%;
-    text-align: center;
-}
 
-@media (max-width: 720px) {
-    .desktop {
-        display: none;
-    }
-    .tablet {
-        display: none;
-    }
-}
+        /* Para pantallas grandes (computadoras de escritorio) */
+        @media (min-width: 1024px) {
+            .logo img {
+                width: 275px;
+            }
+        }
 
+        /* Para tablets (pantallas medianas) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .logo img {
+                width: 200px;
+            }
+        }
 
-@media (min-width: 768px) and (max-width: 990px) {
-    .desktop {
-        display: none;
-    }
-    .movil {
-        display: none;
-    }
-}
-
-@media (min-width: 991px) {
-    .tablet {
-        display: none;
-    }
-    .movil {
-        display: none;
-    }
-}
-        
+        /* Para teléfonos (pantallas pequeñas) */
+        @media (max-width: 767px) {
+            .logo img {
+                width: 125px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class=“Desktop”>
     <div class="background-image"></div>
     <div class="logo">
         <a href="Inicio.html">
-            <img src="Logo1.png" alt="Logo">
+            <img src="../Imagenes/Logo1.png" alt="Logo">
         </a>
-    </div>
-    </div>
-    
-    <div class=“Tablet”>
-    <div class="background-image"></div>
-    <div class="logo">
-        <a href="Inicio.html">
-            <img src="Logo1.png" alt="Logo">
-        </a>
-    </div>
-    </div>
-
-    <div class=“Movile”>
-    <div class="background-image"></div>
-    <div class="logo">
-        <a href="Inicio.html">
-            <img src="Logo1.png" alt="Logo">
-        </a>
-    </div>
     </div>
 </body>
 </html>
