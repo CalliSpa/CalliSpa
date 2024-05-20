@@ -35,16 +35,67 @@
             width: 275px; 
             transition: width 0.3s ease;
         }
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
 
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
         
     </style>
 </head>
 <body>
+    <div class=“Desktop”>
     <div class="background-image"></div>
     <div class="logo">
         <a href="Inicio.html">
             <img src="Logo1.png" alt="Logo">
         </a>
+    </div>
+    </div>
+    
+    <div class=“Tablet”>
+    <div class="background-image"></div>
+    <div class="logo">
+        <a href="Inicio.html">
+            <img src="Logo1.png" alt="Logo">
+        </a>
+    </div>
+    </div>
+
+    <div class=“Movile”>
+    <div class="background-image"></div>
+    <div class="logo">
+        <a href="Inicio.html">
+            <img src="Logo1.png" alt="Logo">
+        </a>
+    </div>
     </div>
 </body>
 </html>
